@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<title>Dark Coder - Stalker Example</title>
+
+<meta content="" name="description">
+
+<meta content="" name="keywords">
+
+<!-- Favicons -->
+
+<link href="https://raw.githubusercontent.com/LoliKillers/LoliKillers/main/assets/img/dc.png" rel="icon">
+
+<link href="https://raw.githubusercontent.com/LoliKillers/LoliKillers/main/assets/img/dc.png" rel="apple-touch-icon">
+
+<!-- Google Fonts -->
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+<link href="https://unpkg.com/highlightjs-badge/highlightjs/styles/dark.css" rel="stylesheet">
+
+<!-- Vendor CSS Files -->
+
+<link href="../assets/vendor/aos/aos.css" rel="stylesheet">
+
+<link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+<link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+<link href="../assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+<link href="../assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+<!-- Template Main CSS File -->
+
+<link href="../assets/css/style.css" rel="stylesheet">
+
+<!-- =======================================================
+
+* Template Name: Knight - v4.3.0
+
+* Template URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+
+* Author: BootstrapMade.com
+
+* License: https://bootstrapmade.com/license/
+
+======================================================== -->
+
+<style>
+
+/* optionally override badge styling */
+
+.code-badge {
+
+  background: #555 !important;
+
+  padding: 8px !important;
+
+}
+
+.code-badge-copy-icon {
+
+  font-size: 1.3em !important;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+
+<header id="header" class="d-flex align-items-center">
+
+<div class="container d-flex align-items-center justify-content-between">
+
+<div class="logo">
+
+<a href="index.html"><img src="https://raw.githubusercontent.com/LoliKillers/LoliKillers/main/images/dc.png" alt="" class="img-fluid"></a>
+
+</div>
+
+<nav id="navbar" class="navbar">
+
+<ul>
+
+<li><a class="nav-link scrollto active" href="index.html">Home</a></li>
+
+<li class="dropdown"><a href="#"><span>List Sample API</span> <i class="bi bi-chevron-down"></i></a>
+
+<ul>
+
+<li><a href="api/islami.html">Islami</a></li>
+
+<li><a href="api/stalking.html">Stalking</a></li>
+
+<li><a href="api/image.html">Image</a></li>
+
+<li><a href="api/downloader.html">Downloader</a></li>
+
+<li><a href="api/info.html">Info</a></li>
+
+<li><a href="api/search.html">Search</a></li>
+
+<li><a href="api/education.html">Education</a></li>
+
+<li><a href="api/anime.html">Anime</a></li>
+
+<li><a href="api/random.html">Random</a></li>
+
+<li><a href="api/convert.html">Convert</a></li>
+
+<li><a href="api/uploader.html">Uploader</a></li>
+
+<li><a href="api/crypto.html">Crypto</a></li>
+
+<li><a href="api/canvas.html">Canvas</a></li>
+
+<li><a href="api/textpro.html">Textpro</a></li>
+
+</ul>
+
+</li>
+
+</ul>
+
+<i class="bi bi-list mobile-nav-toggle"></i>
+
+</nav>
+
+<!-- .navbar -->
+
+</div>
+
+</header>
+
+<!-- End Header -->
+
+<main id="main">
+
+<section id="listSurah" class="faq">
+
+<div class="container">
+
+<div class="section-title" data-aos="fade-up">
+
+<h2>Github Stalker</h2>
+
+<p>Ganti <code>YOUR_APIKEY</code> dengan apikey kalian, apikey bisa kalian dapatkan dengan gratis di <a href="https://api.darkcoder.xyz">https://api.darkcoder.xyz</a></p>
+
+</div>
+
+<ul class="faq-list">
+
+<li data-aos="fade-up">
+
+<a data-bs-toggle="collapse" class="collapsed" data-bs-target="#github-shell-curl">Shell (<code>curl</code>)<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+
+<div id="github-shell-curl" class="collapse" data-bs-parent=".faq-list">
+
+<br>
+
+<pre><code class="hljs lang-shell">curl --request GET \
+
+  url 'https://api.darkcoder.xyz/dc/stalker/github?apikey=YOUR_APIKEY&username=LoliKillers'
+
+</code></pre>
+
+</div>
+
+</li>
+
+<li data-aos="fade-up">
+
+<a data-bs-toggle="collapse" class="collapsed" data-bs-target="#github-nodejs-axios">Nodejs (<code>axios</code>)<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+
+<div id="github-nodejs-axios" class="collapse" data-bs-parent=".faq-list">
+
+<br>
+
+<pre><code class="hljs lang-javascript">var axios = requires('axios')
+
+var options = {
+
+  method: "GET",
+
+  url: "https://api.darkcoder.xyz/dc/stalker/github",
+
+  params: { apikey: "YOUR_APIKEY", username: "LoliKillers" }
+
+}
+
+axios.request(options)
+
+.then(result => {
+
+  console.log(result)
+
+})
+
+.catch(error => {
+
+  console.log(error)
+
+})
+
+</code></pre>
+
+</div>
+
+</li>
+
+<li data-aos="fade-up">
+
+<a data-bs-toggle="collapse" class="collapsed" data-bs-target="#github-ruby-http">Ruby (<code>net:http</code>)<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+
+<div id="github-ruby-http" class="collapse" data-bs-parent=".faq-list">
+
+<br>
+
+<pre><code class="hljs lang-ruby">require 'uri'
+
+require 'net/http'
+
+require 'openssl'
+
+url = URI("https://api.darkcoder.xyz/dc/stalker/github?apikey=YOUR_APIKEY&username=LoliKillers")
+
+http = Net::HTTP.new(url.host, url.port)
+
+http.use_ssl = true
+
+http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+
+request = Net::HTTP::Get.new(url)
+
+response = http.request(request)
+
+puts response.read_body
+
+</code></pre>
+
+</div>
+
+</li>
+
+<li data-aos="fade-up">
+
+<a data-bs-toggle="collapse" class="collapsed" data-bs-target="#github-python-request">Python (<code>request</code>)<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+
+<div id="github-python-request" class="collapse" data-bs-parent=".faq-list">
+
+<br>
+
+<pre><code class="hljs lang-python">import requests
+
+url = "https://api.darkcoder.xyz/dc/stalker/github"
+
+querystring = {"apikey": "YOUR_APIKEY", "username": "LoliKillers"}
+
+response = requests.request("GET", url, headers=headers, params=querystring)
+
+print(response.text)
+
+</code></pre>
+
+</div>
+
+</li>
+
+<li data-aos="fade-up">
+
+<a data-bs-toggle="collapse" class="collapsed" data-bs-target="#github-go-request">GO (<code>new request</code>)<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+
+<div id="github-go-request" class="collapse" data-bs-parent=".faq-list">
+
+<br>
+
+<pre><code class="hljs lang-go">package main
+
+import (
+
+	"fmt"	"net/http"
+
+	"io/ioutil"
+
+)
+
+func main() {
+
+	url := "https://api.darkcoder.xyz/dc/stalker/github?apikey=YOUR_APIKEY&username=LoliKillers"
+
+	req, _ := http.NewRequest("GET", url, nil)
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+
+	body, _ := ioutil.ReadAll(res.Body)
+
+	fmt.Println(res)
+
+	fmt.Println(string(body))
+
+}
+
+</code></pre>
+
+</div>
+
+</li>
+
+<li data-aos="fade-up">
+
+<a data-bs-toggle="collapse" class="collapsed" data-bs-target="#github-java-okhttp">Java (<code>ok http</code>)<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+
+<div id="github-java-okhttp" class="collapse" data-bs-parent=".faq-list">
+
+<br>
+
+<pre><code class="hljs lang-java">OkHttpClient client = new OkHttpClient();
+
+Request request = new Request.Builder()
+
+	.url("https://api.darkcoder.xyz/dc/stalker/github?apikey=YOUR_APIKEY&username=LoliKillers")
+
+	.get()
+
+	.build();
+
+Response response = client.newCall(request).execute();
+
+</code></pre>
+
+</div>
+
+</li>
+
+</ul>
+
+<li data-aos="fade-up">Hasil pengeluaran dengan format <code>.json</code>
+
+<pre><code class="hljs lang-json">{
+
+  "code": Number,
+
+  "date": String,
+
+  "result": {
+
+    "login": String,
+
+    "id": Number,
+
+    "node_id": String,
+
+    "avatar_url": Url,
+
+    "gravatar_id": String,
+
+    "url": Url,
+
+    "html_url": Url,
+
+    "followers_url": Url,
+
+    "following_url": Url,
+
+    "gists_url": Url,
+
+    "starred_url": Url,
+
+    "subscriptions_url": Url,
+
+    "organizations_url": Url,
+
+    "repos_url": Url,
+
+    "events_url": Url,
+
+    "received_events_url": Url,
+
+    "type": String,
+
+    "site_admin": String,
+
+    "name": String,
+
+    "company": String,
+
+    "blog": String,
+
+    "location": String,
+
+    "email": String,
+
+    "hireable": String,
+
+    "bio": String,
+
+    "twitter_username": String,
+
+    "public_repos": Number,
+
+    "public_gists": Number,
+
+    "followers": Number,
+
+    "following": Number,
+
+    "created_at": String,
+
+    "updated_at": String
+
+  },
+
+  "headers": {
+
+    "server": String,
+
+    "vary": String,
+
+    "etag": string,
+
+    "connection": String
+
+  },
+
+  "warning": String
+
+}
+
+</code></pre>
+
+</li>
+
+</div>
+
+</section>
+
+</main><!-- End #main -->
+
+<!-- ======= Footer ======= -->
+
+<footer id="footer">
+
+<div class="footer-top">
+
+<div class="container">
+
+<div class="row justify-content-center">
+
+<div class="col-lg-6">
+
+<a href="#header" class="scrollto footer-logo"><img src="https://raw.githubusercontent.com/LoliKillers/LoliKillers/main/images/dc.png" alt=""></a>
+
+<h3>Dark Coder</h3>
+
+<p>
+
+Rasulullah shallallahu 'alaihi wasallam bersabda: Barangsiapa mengaku-ngaku sesuatu yang bukan miliknya maka ia bukan dari golongan kami, dan hendaklah ia menyiapkan tempat duduknya dalam neraka.
+
+</p>
+
+</div>
+
+</div>
+
+<div class="social-links">
+
+<a href="https://wa.me/6285785445412" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+
+<a href="https://instagram.com/ariasu.xyz" class="instagram"><i class="bx bxl-instagram"></i></a>
+
+<a href="https://t.me/Loli_Killers" class="telegram"><i class="bx bxl-telegram"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="container footer-bottom clearfix">
+
+<div class="copyright">
+
+&copy; Copyright <strong><span>Dark Coder</span></strong>. All Rights Reserved
+
+</div>
+
+<div class="credits">
+
+Designed by <a href="https://github.com/LoliKillers" target="_blank">Loli Killers</a>
+
+</div>
+
+<div class="credits">
+
+Distributed by <a href="https://darkcoder.xyz/" target="_blank">Dark Coder</a>
+
+</div>
+
+</div>
+
+</footer>
+
+<!-- End Footer -->
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+
+<script src="../assets/vendor/aos/aos.js"></script>
+
+<script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+<script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+<script src="../assets/vendor/php-email-form/validate.js"></script>
+
+<script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+<!-- Template Main JS File -->
+
+<script src="assets/js/main.js"></script>
+
+<script src="https://unpkg.com/highlightjs-badge/highlightjs/highlight.pack.js"></script>
+
+<script src="https://unpkg.com/highlightjs-badge/highlightjs-badge.min.js"></script>
+
+<script>
+
+setTimeout(function () {
+
+        var pres = document.querySelectorAll("pre>code");
+
+        for (var i = 0; i < pres.length; i++) {
+
+            hljs.highlightBlock(pres[i]);
+
+        }
+
+        var options = {
+
+            contentSelector: ".container",
+
+            loadDelay:0,
+
+            // CSS class(es) used to render the copy icon.
+
+            copyIconClass: "fa fa-copy",
+
+            // CSS class(es) used to render the done icon.
+
+            checkIconClass: "fa fa-check text-success",
+
+            // hook to allow modifying the text before it's pasted
+
+            onBeforeTextCopied: function(text, codeElement) {
+
+              return text;   //  you can fix up the text here
+
+            }
+
+        };
+
+        window.highlightJsBadge(options);
+
+    },10);
+
+</script>
+
+</body>
+
+</html>

@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/LoliKillers/LoliKillers.github.io/issues"
   },
-  "homepage": "https://github.com/LoliKillers/LoliKillers.github.io#readme"
+  "homepage": "https://github.com/LoliKillers/LoliKillers.github.io#readme",
+  "dependencies": {
+    "xyzapi": "^1.0.8"
+  }
 }
